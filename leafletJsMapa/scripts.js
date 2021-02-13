@@ -23,12 +23,21 @@ let marker2 = L.marker([51.51, -0.09], { icon: iconMarker }).addTo(myMap)
 
 myMap.doubleClickZoom.disable()
 
-myMap.on('dblclick', e => {
+/* myMap.on('dblclick', e => {
+var popup = L.popup();
+    popup
+        .setLatLng(e.latlng)
+        .setContent("Hiciste clic en el mapa en " + e.latlng.toString())
+        .openOn(myMap);
+myMap.on('click', onMapClick);
+}) */
+
+function onMapClick(e) {
     let latLng = myMap.mouseEventToLatLng(e.originalEvent);
 
     var marker = L.marker([latLng.lat, latLng.lng]).addTo(myMap)
     marker.bindPopup("<b>No se que poner</b><br>Ayuda.")
-})
+}
 
 var circle = L.circle([-12.0689979, -77.0865221], {
     color: 'red',
@@ -45,17 +54,6 @@ var polygon = L.polygon([
 circle.bindPopup("No se que poner.");
 polygon.bindPopup("No se que poner.");
 
-
-var popup = L.popup();
-
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("Hiciste clic en el mapa en " + e.latlng.toString())
-        .openOn(myMap);
-}
-
-myMap.on('click', onMapClick);
 
 //obtener la geolocalizacion mediante el navegador
 navigator.geolocation.getCurrentPosition(
