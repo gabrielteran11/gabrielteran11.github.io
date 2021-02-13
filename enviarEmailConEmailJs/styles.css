@@ -1,0 +1,34 @@
+body {
+    background-color: #fffafa;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(238, 255, 0);
+    margin: 5px;
+}
+
+.box {
+    position: relative;
+    top: 180px;
+    background: grey;
+    width: 400px;
+    height: 225px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 7px;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    align-items: center;
+    width: 70%;
+    padding: 3px;
+}
+
+.box div {
+    text-align: center;
+}
