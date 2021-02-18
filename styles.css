@@ -3,7 +3,7 @@
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     list-style: none;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 h1 {
@@ -49,6 +49,7 @@ li {
     border-radius: 7px;
     cursor: pointer;
     color: #fff;
+    font-size: 20px;
 }
 
 #borrar {
@@ -60,6 +61,23 @@ li {
     text-align: center;
     cursor: pointer;
     color: #fff;
+    font-size: 20px;
+}
+
+.credito {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.credito a {
+    width: 50%;
+    display: block;
+    padding: 6px;
+    margin: 5px auto;
+    color: #000;
+    background: #96989A;
+    border-radius: 10px;
 }
 
 li:active,
@@ -67,11 +85,6 @@ li:active,
     background-color: #7a9bff;
 }
 
-p {
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
-}
 
 @media (max-width: 500px) {
     * {
@@ -104,9 +117,11 @@ p {
         padding: 20px;
         margin: 5px 10px;
         font-weight: 700;
+        font-size: 18px;
     }
     #borrar {
         padding: 7px;
+        font-size: 18px;    
         font-weight: 700;
     }
 }
