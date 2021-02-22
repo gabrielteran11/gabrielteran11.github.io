@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 5px;
+}
+
+body p {
+  text-align: center;
+}
+
+body div {
+  text-align: center;
+  width: 500px;
+  margin: 5px auto;
+}
+
+.descripcion {
+  width: 300px;
+  margin: 10px auto;
+}
