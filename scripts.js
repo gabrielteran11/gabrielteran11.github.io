@@ -3,17 +3,17 @@ ScrollReveal().reveal('.header', {
 
 });
 ScrollReveal().reveal('.h1', {
-    delay: 1000,
+    delay: 800,
 
 });
 ScrollReveal().reveal('.fondoCode', {
-    delay: 1500,
+    delay: 800,
 
 });
 
 ScrollReveal().reveal('.scroll', {
-    reset: true,
-    //delay: 1000,
+    //reset: true,
+    delay: 2000,
     interval: 1000
 });
 ScrollReveal().reveal('.footer', {
