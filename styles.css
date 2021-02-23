@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #bbd1ea;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23507dbc' fill-opacity='0.1'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*overflow: hidden;*/
+  margin: 10px auto;
+  width: 80%;
+  height: 50px;
+  background: #A1C6EA;
+  border-radius: 50px 0px 50px 0px;
+}
+
+.header div {
+  display: inline-flex;
+}
+
+.name {
+  margin-top: 15px;
+    font-weight: 500;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px 0px 50px;
+}
+
+.redes {
+  margin-right: 40px;
+}
+
+.redes a {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+.h1 {
+  text-align: center;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.fondoCode div {
+  margin: 0 auto;
+  width: 800px;
+  height: 520px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.fondoCode div img {
+  width: 800px;
+  height: 520px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+      margin: 50px 0 30px 0;
+}
+
+.links div {
+  text-align: center;
+}
+
+.codes {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.link {
+  text-decoration: none;
+  background: #DAE3E5;
+  color: #000;
+  padding: 8px;
+  /*margin: 15px;*/
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 40px;
+  background-color: #A1C6EA;
+}
+
+.footer a {
+  font-weight: 500;
+  padding: 7px;
+  text-align: center;
+  color: #000;
+}
+
+
+html.sr .header, .fondoCode, .h1,.links,.footer{
+  visibility: hidden;
+}
