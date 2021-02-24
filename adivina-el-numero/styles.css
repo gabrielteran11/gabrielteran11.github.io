@@ -1,19 +1,42 @@
 * {
-  padding: 0;
-  margin: 5px;
+    color: #f0e5d8;
 }
 
-body p {
-  text-align: center;
+#body {
+    background-color: #f8f1f1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%2316c79a' fill-opacity='0.2'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-body div {
-  text-align: center;
-  width: 500px;
-  margin: 5px auto;
+#container {
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #19456b;
+    border-radius: 5px;
 }
 
-.descripcion {
-  width: 300px;
-  margin: 10px auto;
+#h1 {
+    font-weight: 700;
+}
+
+.form-text {
+    margin: 5px 0 0.50rem 5px;
+}
+
+.btn {
+    margin: 10px 0;
+}
+
+.indicador {
+    /*display: block;*/
+    width: 55%;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+button.btn-outline-dark {
+    color: #fff;
+    margin: 10px auto;
 }

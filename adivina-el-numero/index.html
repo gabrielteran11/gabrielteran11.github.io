@@ -6,24 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <!-- BOOStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Adivina el numero</title>
 </head>
 
-<body>
-  <p>Puntos por adivinar: <span class="puntos"></span</p>
-    <div>
-        <h1>Juego adivina el número</h1>
-        <p class="descripcion">Hemos seleccionado un número aleatorio entre 1 y 100. Fíjate si lo puedes adivinar en 10 turnos o menos. Vamos a decirte si tu número es más alto o más bajo.</p>
+<body id="body">
 
-        <label>Adivina el numero</label>
-        <input type="text" name="" id="input">
-        <input type="submit" value="Enviar respuesta" id="button">
-        <div class="detalles">
-            <p class="resultados"></p>
-            <p class="indicador"></p>
+    <div class="container" id="container">
+        <p>Puntos por adivinar: <span class="puntos"></span</p>
+        <div class="row">
+            <div class="col">
+                <h1 id="h1">Adivina el número</h1>
+                <p class="descripcion">Hemos seleccionado un número aleatorio entre 1 y 100. Fíjate si lo puedes adivinar en 10 turnos o menos. Vamos a decirte si tu número es más alto o más bajo.</p>
+        
+                    <label for="exampleInputEmail1" class="form-label">Adivina el número:</label>
+                    <input type="number" class="form-control input" placeholder="Ingresa un número">
+                    <!--<div class="form-text">Solo números</div>-->
+                    <input class="btn btn-outline-success" type="button" value="Enviar respuesta" id="button">
+                
+                <div class="detalles">
+                    <p class="resultados"></p>
+                    <p class="indicador"></p>
+        
+                </div>
+            </div>
 
         </div>
+     
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
     <script src="scripts.js"></script>
 </body>
 
