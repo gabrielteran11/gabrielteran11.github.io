@@ -13,8 +13,8 @@ ScrollReveal().reveal('.fondoCode', {
 
 ScrollReveal().reveal('.scroll', {
     //reset: true,
-    delay: 2000,
-    interval: 1000
+    delay: 500,
+    interval: 500
 });
 ScrollReveal().reveal('.footer', {
     //reset: true,
